@@ -1,9 +1,10 @@
 <ion-content>
   <div class="flex-center">
+    
     <ion-card>
       <ion-card-header>
     
-        <ion-card-title color="primary">Sign Up</ion-card-title>
+        <ion-card-title color="primary">Login</ion-card-title>
       </ion-card-header>
     
       <ion-card-content>
@@ -14,7 +15,17 @@
     </ion-item><ion-item color="white">
       <ion-label color="primary" position="floating">Password</ion-label>
       <ion-input type="password"></ion-input>
+      
     </ion-item>
+    <ion-button class="forgot" size="full" fill="clear">Forgot email / password</ion-button>
+
+    <ion-button (click)="onClick()" expand="block"  shape="round">
+      Login
+    </ion-button>
+    <ion-button (click)="onClick()" expand="block"  shape="round">
+      Login with &nbsp; <ion-icon name="logo-github"></ion-icon>
+    </ion-button>
+
       </ion-card-content>
     </ion-card>
     

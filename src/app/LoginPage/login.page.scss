@@ -1,19 +1,19 @@
-ion-Input{
-     border-radius: 40px;
-     height: 55px;
-     box-shadow: 1px 8px 8px 0px rgba(0,0,0,0.08);
-     --highlight-height: 0px;
-     font-size: 18px;
-     padding-top: 20px;
-     padding-bottom: 15px;
-     padding-inline-start: 5px;
+// ion-Input{
+//      border-radius: 40px;
+//      height: 55px;
+//      box-shadow: 1px 8px 8px 0px rgba(0,0,0,0.08);
+//      --highlight-height: 0px;
+//      font-size: 18px;
+//      padding-top: 20px;
+//      padding-bottom: 15px;
+//      padding-inline-start: 5px;
      
-     a{
-       font-size:17px;
-       letter-spacing: 0.5px;
-       text-decoration: none;
-     }
- }
+//      a{
+//        font-size:17px;
+//        letter-spacing: 0.5px;
+//        text-decoration: none;
+//      }
+//  }
 
 // .login{
   
@@ -54,4 +54,8 @@ ion-Input{
 
 #container a {
   text-decoration: none;
+}
+
+.forgot{
+  font-size:12px;
 }
