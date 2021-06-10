@@ -33,6 +33,9 @@ p{
   opacity: 1;
   font-family:var(--unnamed-font-family-montserrat-bold);
 }
+ion-card{
+  box-shadow:none;
+}
 
 .login{
   border-radius: 50px;
