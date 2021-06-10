@@ -25,8 +25,18 @@
 // border-radius: 12px;
 // opacity: 1;
 // }
+p{
+  font-size:12px;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+    letter-spacing: 0px;
+  opacity: 1;
+  font-family:var(--unnamed-font-family-montserrat-bold);
+}
 
-
+.login{
+  border-radius: 50px;
+}
 
 #container {
   text-align: center;
@@ -57,5 +67,5 @@
 }
 
 .forgot{
-  font-size:12px;
+  font-size:12.5px;
 }
