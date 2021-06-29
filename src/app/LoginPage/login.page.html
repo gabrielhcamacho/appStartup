@@ -20,7 +20,8 @@
     </ion-item>
     <ion-button class="forgot" size="full" fill="clear">Forgot email / password</ion-button>
 
-    <ion-button [routerLink]="['./feed/feed.module']" class="login" expand="block" size="full" shape="round">
+    <!-- botao de login com redirecionamento para a pagina de feed -->
+    <ion-button [routerLink]="['/feed']" routerDirection="forward" class="login" expand="block" size="full" shape="round">
       Login
       <ion-ripple-effect type="unbounded"></ion-ripple-effect>
     </ion-button>

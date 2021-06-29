@@ -1,9 +1,43 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Feed</ion-title>
+    <ion-title>BoTech</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <!--Botão Menu Superior-->
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+        <ion-badge></ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="discover">
+        <ion-icon name="planet"></ion-icon>
+        <ion-label>Discover</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="chat">
+        <ion-icon name="chatbox"></ion-icon>
+        <ion-label>Chat</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+
 
 </ion-content>
