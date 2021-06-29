@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    //path: 'sign-up',
+    //loadChildren: () => import('').then( m => m.SignUpPageModule)
   }
 ];
 

@@ -1,4 +1,5 @@
 <ion-content>
+  
   <div class="flex-center">
     
     <ion-card>
@@ -19,13 +20,23 @@
     </ion-item>
     <ion-button class="forgot" size="full" fill="clear">Forgot email / password</ion-button>
 
-    <ion-button class="login" (click)="onClick()" expand="block"  size="full">
+    <ion-button [routerLink]="['./feed/feed.module']" class="login" expand="block" size="full" shape="round">
       Login
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
     </ion-button>
-    <ion-button class="login" (click)="onClick()" expand="block" size="full">
+
+    <ion-button class="login" expand="block" size="full"
+    shape="round">
       Login with &nbsp; <ion-icon name="logo-github"></ion-icon>
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
     </ion-button>
-<p>Don't have an account? <span style="color: #377DFF;">Sign up</span></p>
+
+
+<ion-button [routerLink]="['/sign-up']" routerDirection="forward" 
+  fill="clean">
+  <p>Don't have an account? <span style="color: #377DFF;">Sign up</span></p>
+</ion-button>
+
       </ion-card-content>
     </ion-card>
     
