@@ -1,8 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>BoTech</ion-title>
+    <ion-title> <ion-icon name="beer"></ion-icon>&nbsp;BoTech</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-segment [(ngModel)]="segment" mode="md" #segmentcontrol>
+  <ion-segment-button value="home">
+    <ion-label class="topbar">Home</ion-label>
+  </ion-segment-button>
+  <ion-segment-button class="topbar" value="Video">
+    <ion-label>Videos</ion-label>
+  </ion-segment-button>
+  <ion-segment-button class="topbar" value="Code">
+    <ion-label>Code</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+
 
 <ion-content>
 
@@ -60,6 +74,32 @@
       Keep close to Nature's heart... and break clear away, once in awhile,
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
+
+    <ion-row class="ion-justify-content-start">
+      <ion-col>
+        <ion-button fill="clear" color="medium" size="small">
+          <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          </ion-col> 
+          
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon 
+              name="repeat-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="share-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          </ion-row>
+         
   </ion-card>
 
   <ion-card>
@@ -72,6 +112,32 @@
       Keep close to Nature's heart... and break clear away, once in awhile,
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
+
+    <ion-row class="ion-justify-content-start">
+      <ion-col>
+        <ion-button fill="clear" color="medium" size="small">
+          <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          </ion-col> 
+          
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon 
+              name="repeat-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="share-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          </ion-row>
+    
   </ion-card>
 
   <ion-card>
@@ -84,6 +150,31 @@
       Keep close to Nature's heart... and break clear away, once in awhile,
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
+    <ion-row class="ion-justify-content-start">
+      <ion-col>
+        <ion-button fill="clear" color="medium" size="small">
+          <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+          </ion-col> 
+          
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon 
+              name="repeat-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" color="medium" size="small">
+              <ion-icon name="share-outline" slot="start"></ion-icon>
+              </ion-button>
+          </ion-col>
+          </ion-row>
+    
   </ion-card>
   
 
@@ -97,23 +188,23 @@
     <ion-tab-bar class="bottom-menu" slot="bottom" slot="bottom">
       <ion-tab-button tab="home" class="bottom-menu">
         <ion-icon name="home"></ion-icon>
-        <ion-label>Home</ion-label>
+        <ion-label></ion-label>
         <ion-badge></ion-badge>
       </ion-tab-button>
   
       <ion-tab-button tab="discover" class="bottom-menu">
         <ion-icon name="planet"></ion-icon>
-        <ion-label>Discover</ion-label>
+        <ion-label></ion-label>
       </ion-tab-button>
   
       <ion-tab-button tab="chat" class="bottom-menu">
         <ion-icon name="chatbox"></ion-icon>
-        <ion-label>Chat</ion-label>
+        <ion-label></ion-label>
       </ion-tab-button>
   
       <ion-tab-button tab="profile" class="bottom-menu">
         <ion-icon name="person-circle"></ion-icon>
-        <ion-label>Profile</ion-label>
+        <ion-label></ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>

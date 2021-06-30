@@ -60,9 +60,12 @@ p{
     --border-style: none;
   }
   .fab{
-    top: -5%;
+    top: 2%;
 }
 
-#bottom-toolbar{
-    //height: 100px;
+ion-segment{
+    background-color: white;
+}
+.topbar{
+    font-size:13px;
 }
