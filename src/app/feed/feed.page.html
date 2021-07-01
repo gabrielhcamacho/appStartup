@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-segment [(ngModel)]="segment" mode="md" #segmentcontrol>
+<ion-segment [(ngModel)]="segment" mode="md">
   <ion-segment-button value="home">
     <ion-label class="topbar">Home</ion-label>
   </ion-segment-button>
@@ -20,8 +20,25 @@
 
 <ion-content>
 
+
+  <ion-card>
+    <ion-item lines="none">
+      <ion-textarea class="creatPost" placeholder="Creat a post!"></ion-textarea>
+      
+      <ion-button fill="clean" class="postbutton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+        <g id="Group_10768" data-name="Group 10768" transform="translate(-269 -187)">
+          <circle id="Ellipse_1191" data-name="Ellipse 1191" cx="15.5" cy="15.5" r="15.5" transform="translate(269 187)" fill="#377dff"/>
+          <image id="icons8-pen-96" width="18" height="18" transform="translate(276 194)" xlink:href="data:image/png;base64,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"/>
+        </g>
+      </svg>
+      </ion-button>
+
+    </ion-item>
+</ion-card>
+
+
   <!--Botão Menu Superior-->
-  <ion-fab translucent=true class="fab" vertical="top" horizontal="end" slot="fixed" side="start">
+  <ion-fab translucent=true class="fab" vertical="bottom" horizontal="end" slot="fixed" side="top">
     <ion-fab-button>
       <svg xmlns="http://www.w3.org/2000/svg" width="59" height="57" viewBox="0 0 59 57">
         <g id="Group_30" data-name="Group 30" transform="translate(0.654 -0.63)">
@@ -42,7 +59,7 @@
       </svg>
       
     </ion-fab-button>
-    <ion-fab-list side="bottom">
+    <ion-fab-list side="top">
       <ion-fab-button>
         <ion-icon name="cog"></ion-icon>
       </ion-fab-button>
@@ -61,9 +78,13 @@
       <ion-fab-button>
         <ion-icon name="git-branch"></ion-icon>
       </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="trophy"></ion-icon>
+      </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
 
+  <div class="cardContent">
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -101,6 +122,12 @@
           </ion-row>
          
   </ion-card>
+</div>
+
+  <!-- <ion-item-divider>
+  </ion-item-divider> -->
+
+  <div class="cardContent">
 
   <ion-card>
     <ion-card-header>
@@ -139,7 +166,11 @@
           </ion-row>
     
   </ion-card>
+  </div>
 
+
+
+  <div class="cardContent">
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -176,11 +207,14 @@
           </ion-row>
     
   </ion-card>
-  
+  </div>
 
 
 
-</ion-content>
+
+  </ion-content>
+
+
 
 
 <ion-toolbar id="bottom-toolbar">
