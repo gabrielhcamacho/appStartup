@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'feed',
     loadChildren: () => import('./feed/feed.module').then( m => m.FeedPageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({

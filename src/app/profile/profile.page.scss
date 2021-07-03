@@ -1,0 +1,49 @@
+.imageCenter{
+    margin-left: 15px;
+    margin-top: 10px;
+    width:75px;
+    height:75px;
+}
+#profileName{
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 35px;
+    font-family: var(--ion-font-family, inherit);
+    font-weight:500;
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+}
+#level{
+    margin-top: 8px;
+    margin-left: 10px;
+    font-family: var(--ion-font-family, inherit);
+    font-weight: 600;
+    color: rgba(32, 131, 197, 0.829);
+    font-size: small;
+}
+#points{
+    margin-top: 8px;
+    margin-left: 30px;
+    font-family: var(--ion-font-family, inherit);
+    font-weight: 600;
+    color:#151423ad;
+    font-size: small;
+}
+.flexcontent{
+    display: flex;
+}
+.profileNumber{
+    color:#4579F5;
+    font-weight: 550;
+    font-size: small;
+
+}
+.progressBar{
+    margin-top: 5px;
+}
+#description{
+    margin-top: 50px;
+    font-family: var(--ion-font-family, inherit);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.74);
+}
