@@ -56,3 +56,32 @@
 
 
 </ion-content>
+
+
+
+<ion-toolbar id="bottom-toolbar">
+  <ion-tabs id="">
+    <ion-tab-bar class="bottom-menu" slot="bottom" slot="bottom">
+      <ion-tab-button tab="home" class="bottom-menu" [routerLink]="['/feed']" routerDirection="backward">
+        <ion-icon name="home"></ion-icon>
+        <ion-label></ion-label>
+        <ion-badge></ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="discover" class="bottom-menu">
+        <ion-icon name="planet"></ion-icon>
+        <ion-label></ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="chat" class="bottom-menu">
+        <ion-icon name="chatbox"></ion-icon>
+        <ion-label></ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile" class="bottom-menu" [routerLink]="['/profile']" routerDirection="forward">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label></ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
