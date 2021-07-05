@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Profile</ion-title>
+    <ion-button slot="end" fill="clear">
+      <ion-icon slot="end" style="margin-right:5px;"  name="cog"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -11,8 +14,11 @@
       <img src="https://lh3.google.com/u/1/ogw/ADea4I7_VbO-PYOsR_y5s-tReMwQyAt7dtWMnDhgGBn1=s192-c-mo">
     </ion-avatar>
     <h1 id="profileName">Gabriel Camacho</h1>
-    
 </div>
+
+<ion-label id="username">thegabrielcamacho</ion-label>
+
+
 <ion-grid>
   <ion-row>
     <ion-col size="4" class="ion-text-center">
@@ -52,6 +58,42 @@
 </ion-row>
 <ion-row><ion-col><ion-label id="description">Software Engineering Student 💻 focusing on front-end, ReactJS, NodeJs and ReactNative</ion-label></ion-col></ion-row>
 </ion-grid>
+
+<div id="repositories">
+<ion-label id="repositoriesTitle">Repositories<br></ion-label>
+
+<div class="icons">
+<ion-button fill="clear">
+  <ion-icon name="logo-github" ></ion-icon>
+</ion-button>
+<ion-button fill="clear">
+  <ion-icon name="logo-gitlab"></ion-icon>
+</ion-button>
+</div>
+</div>
+
+
+  <ion-label id="ClubsTitle">Clubs participating</ion-label>
+  <ion-button class="next-buttom"><ion-icon name="chevron-forward-outline"></ion-icon></ion-button>
+
+
+  
+<div class="clubs">
+  <ion-row>
+    <ion-col>
+      <img class="imageClub" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80">
+      <ion-label class="fotoLabel">VR Gaming</ion-label>
+    </ion-col>
+    <ion-col>
+      <img class="imageClub" src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80">
+      <ion-label class="fotoLabel">Hackathon BR</ion-label>
+    </ion-col>
+    <ion-col>
+      <img class="imageClub" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80">
+      <ion-label class="fotoLabel">Front End</ion-label>
+    </ion-col>
+  </ion-row>
+</div>
 
 
 
