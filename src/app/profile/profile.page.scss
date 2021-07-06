@@ -3,6 +3,8 @@
     margin-top: 10px;
     width:75px;
     height:75px;
+    border: 2px solid #4579F5;
+    
 }
 #profileName{
     text-align: center;
@@ -18,7 +20,7 @@
     margin-left: 10px;
     font-family: var(--ion-font-family, inherit);
     font-weight: 600;
-    color: rgba(32, 131, 197, 0.829);
+    color: #2083c5d3;
     font-size: small;
 }
 #ClubsTitle{
@@ -94,7 +96,7 @@
     width: 100%;
     height: 115px;
     border-radius: 18px 0px 0px 18px;
-    box-shadow: 6px 6px 12px #1211205e;
+    box-shadow: 3px 3px 6px #12112033;
     border-style: none;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -129,3 +131,28 @@
     width: 60px;
     height: 60px;
 }
+#segment{
+    margin-top: 8px;
+}
+
+.cardContent{
+    border-bottom: 1.5px;
+    border-bottom-color: rgba(173, 173, 173, 0.356);
+    border-bottom-style: solid;
+    border-radius: 10px;
+}
+
+.feedcard{
+    margin: 2;
+    box-shadow: none;
+    border: none;
+    margin-top: 5px;
+}
+
+.AvatarName{
+    font-size:17px;
+    font-weight: 440;
+    opacity: 85%;
+    display: flex;
+}
+

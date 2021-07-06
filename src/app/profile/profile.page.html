@@ -11,7 +11,7 @@
   
   <div class="flexcontent">
     <ion-avatar class="imageCenter">
-      <img src="https://lh3.google.com/u/1/ogw/ADea4I7_VbO-PYOsR_y5s-tReMwQyAt7dtWMnDhgGBn1=s192-c-mo">
+      <img src="https://lh3.googleusercontent.com/a-/AOh14GgQcvOZqEjUPskJO5WVceLwzFxHCC-vso9JaRE3=s192-c-rg-br100">
     </ion-avatar>
     <h1 id="profileName">Gabriel Camacho</h1>
 </div>
@@ -96,8 +96,71 @@
 </div>
 
 
+<ion-segment id="segment" mode="md">
+  <ion-segment-button value="home">
+    <ion-label class="topbar">My Posts</ion-label>
+  </ion-segment-button>
+  <ion-segment-button class="topbar" value="Video">
+    <ion-label>Videos</ion-label>
+  </ion-segment-button>
+  <ion-segment-button class="topbar" value="Code">
+    <ion-label>Code</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+
+<div class="cardContent">
+  <ion-card class="feedcard">
+    <ion-card-header style="padding-left: 0px;">
+      <ion-item>
+        <ion-avatar class="ionAvatar"slot="start">
+          <img src="https://lh3.googleusercontent.com/a-/AOh14GgQcvOZqEjUPskJO5WVceLwzFxHCC-vso9JaRE3=s192-c-rg-br100">
+        </ion-avatar>
+        <ion-label class="AvatarName">Gabriel Camacho</ion-label>
+      </ion-item>
+    </ion-card-header>
+
+  <ion-card-content>
+    I'm gonna go to NASA Space Apps Challenge in Curitiba next month, day 6, if anyone is interested to join me and my team pls lmk! Let's code the hack out of that challenge!!
+  </ion-card-content>
+  <ion-row class="ion-justify-content-start">
+    <ion-col>
+      <ion-button fill="clear" color="medium" size="small">
+        <ion-icon name="heart-outline"></ion-icon>
+        </ion-button>
+        </ion-col> 
+        
+        <ion-col>
+          <ion-button fill="clear" color="medium" size="small">
+            <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="medium" size="small">
+            <ion-icon 
+            name="repeat-outline" slot="start"></ion-icon>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="medium" size="small">
+            <ion-icon name="share-outline" slot="start"></ion-icon>
+            </ion-button>
+        </ion-col>
+        </ion-row>
+  
+</ion-card>
+</div>
+
+
+
+
+
+
+
 
 </ion-content>
+
+
 
 
 
