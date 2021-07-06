@@ -8,6 +8,51 @@
 </ion-header>
 
 <ion-content>
+
+
+  <ion-fab translucent=true class="fab" vertical="bottom" horizontal="end" slot="fixed" side="top">
+    <ion-fab-button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="59" height="57" viewBox="0 0 59 57">
+        <g id="Group_30" data-name="Group 30" transform="translate(0.654 -0.63)">
+          <rect id="Rectangle" width="59" height="57" transform="translate(-0.654 0.63)" fill="none"/>
+          <g id="Group_31" data-name="Group 31" transform="translate(17.157 19.035)">
+            <g id="Rectangle-2" data-name="Rectangle" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1">
+              <rect width="11.029" height="7.72" rx="1.568" stroke="none"/>
+              <rect x="0.5" y="0.5" width="10.029" height="6.72" rx="1.068" fill="none"/>
+            </g>
+            <rect id="Rectangle_Copy_2" data-name="Rectangle Copy 2" width="11.029" height="14.338" rx="1.568" transform="translate(13.112 0)" fill="#1a91fa"/>
+            <rect id="Rectangle_Copy_5" data-name="Rectangle Copy 5" width="11.029" height="14.338" rx="1.568" transform="translate(0 9.926)" fill="#1a91fa"/>
+            <g id="Rectangle_Copy_3" data-name="Rectangle Copy 3" transform="translate(13.112 16.543)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1">
+              <rect width="11.029" height="7.72" rx="1.568" stroke="none"/>
+              <rect x="0.5" y="0.5" width="10.029" height="6.72" rx="1.068" fill="none"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+      
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="play"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="trail-sign"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="bookmarks"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="basket"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="git-branch"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="trophy"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
   
   <div class="flexcontent">
     <ion-avatar class="imageCenter">
@@ -173,7 +218,7 @@
         <ion-badge></ion-badge>
       </ion-tab-button>
   
-      <ion-tab-button tab="discover" class="bottom-menu">
+      <ion-tab-button tab="discover" class="bottom-menu" [routerLink]="['/discover']" routerDirection="backward">
         <ion-icon name="planet"></ion-icon>
         <ion-label></ion-label>
       </ion-tab-button>
