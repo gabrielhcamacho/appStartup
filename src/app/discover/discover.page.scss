@@ -39,9 +39,21 @@
     margin-left: 26%;
     color: #4579F5;
     display: flex;
-    margin-top: 20px;
-    
-    
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.titulo-tech-languagesFL{
+    font-family: Helvetica;
+    font-weight: 600;
+    letter-spacing:3px;
+    font-size: 12px;
+    margin-left: 8%;
+    color: #4579F5;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .techContent{
@@ -57,6 +69,8 @@
     font-family: var(--ion-font-family, inherit);
     color:#151423ad;
     font-weight: 550;
+    font-size: small;
+    
 }
 .logo{
     border-radius: 50%;
@@ -67,5 +81,10 @@
     background-color:#457af507;
     padding:2px;
     padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
 
 }
