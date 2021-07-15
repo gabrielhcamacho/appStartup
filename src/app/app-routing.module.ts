@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'discover',
     loadChildren: () => import('./discover/discover.module').then( m => m.DiscoverPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,142 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-label id="editHeader">Edit</ion-label>
+    <ion-title>Chat</ion-title>
+    <ion-button fill="clear" slot="end" size="small">
+       <ion-icon name="add" id="plus"></ion-icon>
+    </ion-button>
+   
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div id="search">
+    <ion-row>
+      <ion-input placeholder="Search"></ion-input>
+      <ion-button fill="clear">
+        <ion-icon name="beer"></ion-icon>
+      </ion-button>
+    </ion-row>
+  </div>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://avatars.githubusercontent.com/u/80973488?v=4">
+      </ion-avatar>
+      <ion-label>
+        <h3>Ariel</h3>
+        <p>bele</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://cdn.discordapp.com/attachments/781888021447442472/862123563792465961/WhatsApp_Image_2021-04-05_at_19.22.22.jpeg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Daniel</h3>
+        <p>ja fiz o upload ta suave</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://avatars.githubusercontent.com/u/81862704?v=4">
+      </ion-avatar>
+      <ion-label>
+        <h3>Bruno Okamoto</h3>
+        <p>ja criei o repositorio</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://avatars.githubusercontent.com/u/80994817?v=4">
+      </ion-avatar>
+      <ion-label>
+        <div class="displaynot">
+            <h3>José Pedro</h3>
+            <div class="bell">2</div>
+        </div>
+       
+        <p class="notificacao">To entrando no server</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://investidorsardinha.r7.com/wp-content/uploads/2020/12/tim-cook-quem-e-infancia-carreira-e-filantropia-do-ceo-da-apple-2.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Tim Cook</h3>
+        <p>Ow nmr Tim ve se muda </p>
+        <p>algo de vdd no proximo Iphone</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://exame.com/wp-content/uploads/2021/05/elon-musk.jpg">
+      </ion-avatar>
+      <ion-label>
+        <div class="displaynot">
+          <h3>Elonzin</h3>
+          <div class="bell">1 </div>
+          
+        </div>
+        
+        <p class="notificacao">Ta tranquilo Gab vlw ai</p>
+        <p class="notificacao">pela ajuda!</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://filipedeschamps.com.br/avatar-big.png">
+      </ion-avatar>
+      <ion-label>
+        <h3>Filipe Deschamps</h3> 
+        <p>Tu viu aquela IA do video?</p>
+        <p>kr surreal aquilo, ela sabe tudo!!</p>
+      </ion-label>
+    </ion-item>
+
+
+
+     
+  </ion-list> 
+
+
+
+
+</ion-content>
+
+
+
+<ion-toolbar id="bottom-toolbar">
+  <ion-tabs id="">
+    <ion-tab-bar class="bottom-menu" slot="bottom" slot="bottom">
+      <ion-tab-button tab="home" class="bottom-menu" [routerLink]="['/feed']" routerDirection="backward">
+        <ion-icon name="home"></ion-icon>
+        <ion-label></ion-label>
+        <ion-badge></ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="discover" class="bottom-menu" [routerLink]="['/discover']" routerDirection="backward">
+        <ion-icon name="planet"></ion-icon>
+        <ion-label></ion-label>
+      </ion-tab-button>
+
+      
+      <ion-tab-button tab="chat" [routerLink]="['/chat']" class="bottom-menu">
+        <ion-icon name="chatbox"></ion-icon>
+        <ion-label></ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile" class="bottom-menu" [routerLink]="['/profile']" routerDirection="forward">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label></ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
