@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },  {
+    path: 'discover',
+    loadChildren: () => import('./discover/discover.module').then( m => m.DiscoverPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+
 ];
 
 @NgModule({

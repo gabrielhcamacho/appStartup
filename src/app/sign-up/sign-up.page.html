@@ -17,27 +17,27 @@
     
       <ion-card-content>
         <ion-item color="white">
-          <ion-label color="primary" position="floating">Email</ion-label>
-          <ion-input type="email"></ion-input>
+          <ion-label color="primary" position="floating">Username</ion-label>
+          <ion-input [(ngModel)]="username" type="text"></ion-input>
         </ion-item>
     
     <ion-item color="white">
-      <ion-label color="primary" position="floating">Birth Date</ion-label>
-      <ion-datetime></ion-datetime>
+      <ion-label color="primary" position="floating">Name</ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
     </ion-item>
     
     <ion-item color="white">
       <ion-label color="primary" position="floating">Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
     
     <ion-item class="confirm_password" color="white">
       <ion-label color="primary" position="floating">Confirm Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]="repassword" type="password"></ion-input>
     </ion-item>
     
 
-    <ion-button [routerLink]="['/feed']" routerDirection="forward" class="login" expand="block"  size="full"  shape="round">
+    <ion-button (click)="register()" class="login" expand="block"  size="full"  shape="round">
       Sign Up
       <ion-ripple-effect type="unbounded"></ion-ripple-effect>
     </ion-button>

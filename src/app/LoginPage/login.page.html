@@ -10,18 +10,18 @@
     
       <ion-card-content>
         <ion-item color="white">
-      <ion-label color="primary" position="floating">Email</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-label color="primary" position="floating">Username</ion-label>
+      <ion-input [(ngModel)]="usuario" type="email"></ion-input>
       
     </ion-item><ion-item color="white">
       <ion-label color="primary" position="floating">Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]="senha" type="password"></ion-input>
       
     </ion-item>
     <ion-button class="forgot" size="full" fill="clear">Forgot email / password</ion-button>
 
     <!-- botao de login com redirecionamento para a pagina de feed -->
-    <ion-button [routerLink]="['/feed']" routerDirection="forward" class="login" expand="block" size="full" shape="round">
+    <ion-button (click)="login()" class="login" expand="block" size="full" shape="round">
       Login
       <ion-ripple-effect type="unbounded"></ion-ripple-effect>
     </ion-button>
@@ -40,6 +40,7 @@
 
       </ion-card-content>
     </ion-card>
-    
   </div>
+
+
 </ion-content>

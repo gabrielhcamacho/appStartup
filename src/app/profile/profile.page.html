@@ -1,18 +1,69 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Profile</ion-title>
+    <ion-button slot="end" fill="clear">
+      <ion-icon slot="end" style="margin-right:5px;"  name="cog"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+
+  <ion-fab translucent=true class="fab" vertical="bottom" horizontal="end" slot="fixed" side="top">
+    <ion-fab-button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="59" height="57" viewBox="0 0 59 57">
+        <g id="Group_30" data-name="Group 30" transform="translate(0.654 -0.63)">
+          <rect id="Rectangle" width="59" height="57" transform="translate(-0.654 0.63)" fill="none"/>
+          <g id="Group_31" data-name="Group 31" transform="translate(17.157 19.035)">
+            <g id="Rectangle-2" data-name="Rectangle" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1">
+              <rect width="11.029" height="7.72" rx="1.568" stroke="none"/>
+              <rect x="0.5" y="0.5" width="10.029" height="6.72" rx="1.068" fill="none"/>
+            </g>
+            <rect id="Rectangle_Copy_2" data-name="Rectangle Copy 2" width="11.029" height="14.338" rx="1.568" transform="translate(13.112 0)" fill="#1a91fa"/>
+            <rect id="Rectangle_Copy_5" data-name="Rectangle Copy 5" width="11.029" height="14.338" rx="1.568" transform="translate(0 9.926)" fill="#1a91fa"/>
+            <g id="Rectangle_Copy_3" data-name="Rectangle Copy 3" transform="translate(13.112 16.543)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1">
+              <rect width="11.029" height="7.72" rx="1.568" stroke="none"/>
+              <rect x="0.5" y="0.5" width="10.029" height="6.72" rx="1.068" fill="none"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+      
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="play"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="trail-sign"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="bookmarks"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="basket"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="git-branch"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="trophy"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
   
   <div class="flexcontent">
     <ion-avatar class="imageCenter">
-      <img src="https://lh3.google.com/u/1/ogw/ADea4I7_VbO-PYOsR_y5s-tReMwQyAt7dtWMnDhgGBn1=s192-c-mo">
+      <img src="https://lh3.googleusercontent.com/a-/AOh14GgQcvOZqEjUPskJO5WVceLwzFxHCC-vso9JaRE3=s192-c-rg-br100">
     </ion-avatar>
     <h1 id="profileName">Gabriel Camacho</h1>
-    
 </div>
+
+<ion-label id="username">thegabrielcamacho</ion-label>
+
+
 <ion-grid>
   <ion-row>
     <ion-col size="4" class="ion-text-center">
@@ -53,9 +104,108 @@
 <ion-row><ion-col><ion-label id="description">Software Engineering Student 💻 focusing on front-end, ReactJS, NodeJs and ReactNative</ion-label></ion-col></ion-row>
 </ion-grid>
 
+<div id="repositories">
+<ion-label id="repositoriesTitle">Repositories<br></ion-label>
+
+<div class="icons">
+<ion-button fill="clear">
+  <ion-icon name="logo-github" ></ion-icon>
+</ion-button>
+<ion-button fill="clear">
+  <ion-icon name="logo-gitlab"></ion-icon>
+</ion-button>
+</div>
+</div>
+
+
+  <ion-label id="ClubsTitle">Clubs participating</ion-label>
+  <ion-button class="next-buttom"><ion-icon name="chevron-forward-outline"></ion-icon></ion-button>
+
+
+  
+<div class="clubs">
+  <ion-row>
+    <ion-col>
+      <img class="imageClub" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80">
+      <ion-label class="fotoLabel">VR Gaming</ion-label>
+    </ion-col>
+    <ion-col>
+      <img class="imageClub" src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80">
+      <ion-label class="fotoLabel">Hackathon BR</ion-label>
+    </ion-col>
+    <ion-col>
+      <img class="imageClub" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80">
+      <ion-label class="fotoLabel">Front End</ion-label>
+    </ion-col>
+  </ion-row>
+</div>
+
+
+<ion-segment id="segment" mode="md">
+  <ion-segment-button value="home">
+    <ion-label class="topbar">My Posts</ion-label>
+  </ion-segment-button>
+  <ion-segment-button class="topbar" value="Video">
+    <ion-label>Videos</ion-label>
+  </ion-segment-button>
+  <ion-segment-button class="topbar" value="Code">
+    <ion-label>Code</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+
+<div class="cardContent">
+  <ion-card class="feedcard">
+    <ion-card-header style="padding-left: 0px;">
+      <ion-item>
+        <ion-avatar class="ionAvatar"slot="start">
+          <img src="https://lh3.googleusercontent.com/a-/AOh14GgQcvOZqEjUPskJO5WVceLwzFxHCC-vso9JaRE3=s192-c-rg-br100">
+        </ion-avatar>
+        <ion-label class="AvatarName">Gabriel Camacho</ion-label>
+      </ion-item>
+    </ion-card-header>
+
+  <ion-card-content>
+    I'm gonna go to NASA Space Apps Challenge in Curitiba next month, day 6, if anyone is interested to join me and my team pls lmk! Let's code the hack out of that challenge!!
+  </ion-card-content>
+  <ion-row class="ion-justify-content-start">
+    <ion-col>
+      <ion-button fill="clear" color="medium" size="small">
+        <ion-icon name="heart-outline"></ion-icon>
+        </ion-button>
+        </ion-col> 
+        
+        <ion-col>
+          <ion-button fill="clear" color="medium" size="small">
+            <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="medium" size="small">
+            <ion-icon 
+            name="repeat-outline" slot="start"></ion-icon>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" color="medium" size="small">
+            <ion-icon name="share-outline" slot="start"></ion-icon>
+            </ion-button>
+        </ion-col>
+        </ion-row>
+  
+</ion-card>
+</div>
+
+
+
+
+
+
 
 
 </ion-content>
+
+
 
 
 
@@ -68,12 +218,12 @@
         <ion-badge></ion-badge>
       </ion-tab-button>
   
-      <ion-tab-button tab="discover" class="bottom-menu">
+      <ion-tab-button tab="discover" class="bottom-menu" [routerLink]="['/discover']" routerDirection="backward">
         <ion-icon name="planet"></ion-icon>
         <ion-label></ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="chat" class="bottom-menu">
+      <ion-tab-button tab="chat" class="bottom-menu" [routerLink]="['/chat']" routerDirection="forward">
         <ion-icon name="chatbox"></ion-icon>
         <ion-label></ion-label>
       </ion-tab-button>

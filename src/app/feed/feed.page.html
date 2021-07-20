@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-segment [(ngModel)]="segment" mode="md">
+<ion-segment class="segment" mode="md">
   <ion-segment-button value="home">
     <ion-label class="topbar">Home</ion-label>
   </ion-segment-button>
@@ -23,9 +23,9 @@
 
   <ion-card id="cratePostCard">
     <ion-item lines="none">
-      <ion-textarea class="creatPost" placeholder="Creat a post!"></ion-textarea>
+      <ion-textarea [(ngModel)]="inputTexto" class="creatPost" placeholder="Creat a post!"></ion-textarea>
       
-      <ion-button fill="clean" class="postbutton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+      <ion-button (click)="post()" fill="clean" class="postbutton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
         <g id="Group_10768" data-name="Group 10768" transform="translate(-269 -187)">
           <circle id="Ellipse_1191" data-name="Ellipse 1191" cx="15.5" cy="15.5" r="15.5" transform="translate(269 187)" fill="#377dff"/>
           <image id="icons8-pen-96" width="18" height="18" transform="translate(276 194)" xlink:href="data:image/png;base64,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"/>
@@ -61,9 +61,6 @@
     </ion-fab-button>
     <ion-fab-list side="top">
       <ion-fab-button>
-        <ion-icon name="cog"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
         <ion-icon name="play"></ion-icon>
       </ion-fab-button>
       <ion-fab-button>
@@ -84,21 +81,29 @@
     </ion-fab-list>
   </ion-fab>
 
-  <div class="cardContent">
+  <div *ngFor='let post of returnFeed().reverse()' class="cardContent">
   <ion-card class="feedcard">
     <ion-card-header style="padding-left: 0px;">
       <ion-item>
         <ion-avatar slot="start">
-          <img src="https://lh5.googleusercontent.com/0qdHfEmX-i2cg4VuWIyv8aPDAvnwAAec83V0TayjDIOCPKOJN_QldLjlAaN1-wMYOxOXFl9D6aQHstLOpzKeU9DOIEVEWcryXiigrn25oqg7jD7mBnTXIcZs464SlayMSA=w1280">
+          <!-- ariel -->
+          <img *ngIf="post[0] == 'Ariel Moreira'" src="https://avatars.githubusercontent.com/u/80973488?v=4">
+          <!-- bruno -->
+          <img *ngIf="post[0] == 'Bruno Okamoto'"src="https://avatars.githubusercontent.com/u/81862704?v=4">
+          <!-- gabriel -->
+          <img *ngIf="post[0] == 'Gabriel Camacho'" src="https://lh3.googleusercontent.com/a-/AOh14GgQcvOZqEjUPskJO5WVceLwzFxHCC-vso9JaRE3=s192-c-rg-br100">
+          <!-- Dani -->
+          <img *ngIf="post[0] == 'Daniel Molina'" src="https://cdn.discordapp.com/attachments/781888021447442472/862123563792465961/WhatsApp_Image_2021-04-05_at_19.22.22.jpeg">
+          <!-- josé -->
+          <img *ngIf="post[0] == 'José Pedro'" src="https://avatars.githubusercontent.com/u/80994817?v=4">
         </ion-avatar>
-        <ion-label class="AvatarName">Arielzera</ion-label>
+        <ion-label class="AvatarName">{{ post[0] }}</ion-label>
       </ion-item>
     </ion-card-header>
   
     <ion-card-content>
-      Hey guys we just posted our open source simulator for autonomous vehicles built on Unreal Engine / Unity, from Microsoft AI & Research. Check it out!
+      {{ post[1] }}
 <br><br>
-<ion-icon name="logo-github"></ion-icon><a>github.com/microsoft/AirSim</a>
     </ion-card-content>
 
     <ion-row class="ion-justify-content-start">
@@ -129,100 +134,6 @@
   </ion-card>
 </div>
 
-  <!-- <ion-item-divider>
-  </ion-item-divider> -->
-
-  <div class="cardContent">
-    <ion-card class="feedcard">
-      <ion-card-header style="padding-left: 0px;">
-        <ion-item>
-          <ion-avatar slot="start">
-            <img src="https://lh5.googleusercontent.com/0qdHfEmX-i2cg4VuWIyv8aPDAvnwAAec83V0TayjDIOCPKOJN_QldLjlAaN1-wMYOxOXFl9D6aQHstLOpzKeU9DOIEVEWcryXiigrn25oqg7jD7mBnTXIcZs464SlayMSA=w1280">
-          </ion-avatar>
-          <ion-label class="AvatarName">Arielzera</ion-label>
-        </ion-item>
-      </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-
-    <ion-row class="ion-justify-content-start">
-      <ion-col>
-        <ion-button fill="clear" color="medium" size="small">
-          <ion-icon name="heart-outline"></ion-icon>
-          </ion-button>
-          </ion-col> 
-          
-          <ion-col>
-            <ion-button fill="clear" color="medium" size="small">
-              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
-              </ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-button fill="clear" color="medium" size="small">
-              <ion-icon 
-              name="repeat-outline" slot="start"></ion-icon>
-              </ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-button fill="clear" color="medium" size="small">
-              <ion-icon name="share-outline" slot="start"></ion-icon>
-              </ion-button>
-          </ion-col>
-          </ion-row>
-    
-  </ion-card>
-  </div>
-
-
-
-  <div class="cardContent">
-    <ion-card class="feedcard">
-      <ion-card-header style="padding-left: 0px;">
-        <ion-item>
-          <ion-avatar slot="start">
-            <img src="https://lh5.googleusercontent.com/0qdHfEmX-i2cg4VuWIyv8aPDAvnwAAec83V0TayjDIOCPKOJN_QldLjlAaN1-wMYOxOXFl9D6aQHstLOpzKeU9DOIEVEWcryXiigrn25oqg7jD7mBnTXIcZs464SlayMSA=w1280">
-          </ion-avatar>
-          <ion-label class="AvatarName">Arielzera</ion-label>
-        </ion-item>
-      </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-    <ion-row class="ion-justify-content-start">
-      <ion-col>
-        <ion-button fill="clear" color="medium" size="small">
-          <ion-icon name="heart-outline"></ion-icon>
-          </ion-button>
-          </ion-col> 
-          
-          <ion-col>
-            <ion-button fill="clear" color="medium" size="small">
-              <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
-              </ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-button fill="clear" color="medium" size="small">
-              <ion-icon 
-              name="repeat-outline" slot="start"></ion-icon>
-              </ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-button fill="clear" color="medium" size="small">
-              <ion-icon name="share-outline" slot="start"></ion-icon>
-              </ion-button>
-          </ion-col>
-          </ion-row>
-    
-  </ion-card>
-  </div>
-
-
-
 
   </ion-content>
 
@@ -238,12 +149,12 @@
         <ion-badge></ion-badge>
       </ion-tab-button>
   
-      <ion-tab-button tab="discover" class="bottom-menu">
+      <ion-tab-button tab="discover" class="bottom-menu" [routerLink]="['/discover']" routerDirection="forward">
         <ion-icon name="planet"></ion-icon>
         <ion-label></ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="chat" class="bottom-menu">
+      <ion-tab-button tab="chat" class="bottom-menu" [routerLink]="['/chat']" routerDirection="forward">
         <ion-icon name="chatbox"></ion-icon>
         <ion-label></ion-label>
       </ion-tab-button>
